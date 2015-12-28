@@ -264,7 +264,7 @@ elseif (has("gui_running") && g:solarized_degrade == 1)
     " while in gui mode via "let g:solarized_degrade=1", though this is not
     " recommened and is for testing only.
     let s:vmode       = "gui"
-    let s:base03      = "#1c1c1c"
+    let s:base03      = "#000000"
     let s:base02      = "#262626"
     let s:base01      = "#4e4e4e"
     let s:base00      = "#585858"
@@ -282,7 +282,7 @@ elseif (has("gui_running") && g:solarized_degrade == 1)
     let s:green       = "#5f8700"
 elseif g:solarized_termcolors != 256 && &t_Co >= 16
     let s:vmode       = "cterm"
-    let s:base03      = "8"
+    let s:base03      = "16"
     let s:base02      = "0"
     let s:base01      = "10"
     let s:base00      = "11"
@@ -300,7 +300,7 @@ elseif g:solarized_termcolors != 256 && &t_Co >= 16
     let s:green       = "2"
 elseif g:solarized_termcolors == 256
     let s:vmode       = "cterm"
-    let s:base03      = "234"
+    let s:base03      = "16"
     let s:base02      = "235"
     let s:base01      = "239"
     let s:base00      = "240"
